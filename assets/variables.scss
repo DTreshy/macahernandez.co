@@ -1,0 +1,15 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify
+// $font-size-root: 20px;
+$card-elevation: 0;
+$headings: (
+  'h1': (
+    'size': 10rem,
+    'line-height': 0.9em
+  ),
+  'h3': (
+    'size': 5.6rem,
+    'line-height': 0.83em
+  ),
+)
