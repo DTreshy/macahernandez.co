@@ -15,10 +15,11 @@
     "@nuxt/core": "^2.15.3",
     "@nuxtjs/strapi": "^0.3.0",
     "@nuxtjs/vercel-builder": "^0.21.2",
+    "@nuxtjs/vuetify": "^1.11.3",
     "core-js": "^3.9.1",
     "esm": "^3.2.25",
-    "nuxt": "^2.15.3",
-    "@nuxtjs/vuetify": "^1.11.3"
+    "npm": "^7.8.0",
+    "nuxt": "^2.15.3"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^6.0.0",

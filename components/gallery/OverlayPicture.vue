@@ -5,8 +5,8 @@
       v-if="overlayImage != undefined"
       v-show="overlay"
       contain
-      :src="'https://admin.macahernandez.co' + overlayImage.url"
-      :lazy-src="'https://admin.macahernandez.co' + overlayImage.formats.thumbnail.url"
+      :src="overlayImage.url"
+      :lazy-src="overlayImage.formats.thumbnail.url"
       :alt="overlayImage.alternativeText"
       class="border overlay-image"
     />

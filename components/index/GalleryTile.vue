@@ -7,9 +7,9 @@
       :to="'gallery/' + gallery.id"
     >
       <v-img
-        :src="'https://admin.macahernandez.co' + gallery.Main_picture.formats.small.url"
-        :lazy-src="'https://admin.macahernandez.co' + gallery.Main_picture.formats.thumbnail.url"
-        :alt="'https://admin.macahernandez.co' + gallery.Main_picture.alternativeText"
+        :src="gallery.Main_picture.formats.small.url"
+        :lazy-src="gallery.Main_picture.formats.thumbnail.url"
+        :alt="gallery.Main_picture.alternativeText"
       />
       <v-expand-transition>
         <v-overlay

@@ -3,8 +3,8 @@
     <v-card tile class="border">
       <v-img
         v-if="picture.formats.large != undefined"
-        :src="'https://admin.macahernandez.co' + picture.formats.large.url"
-        :lazy-src="'https://admin.macahernandez.co' + picture.formats.thumbnail.url"
+        :src="picture.formats.large.url"
+        :lazy-src="picture.formats.thumbnail.url"
         :alt="picture.alternativeText"
         class="border fill-height"
       />
@@ -27,20 +27,20 @@
 </template>
 
 <script>
-  export default {
-    name: 'Picture',
-    props: {
-      picture: {
-        required: true,
-        type: Object
-      }
-    },
-    data () {
-      return {
-        overlay: false
-      }
+export default {
+  name: 'Picture',
+  props: {
+    picture: {
+      required: true,
+      type: Object
+    }
+  },
+  data () {
+    return {
+      overlay: false
     }
   }
+}
 </script>
 
 <style scoped>
