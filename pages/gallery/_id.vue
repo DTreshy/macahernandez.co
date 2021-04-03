@@ -6,8 +6,8 @@
       <v-img
         v-if="gallery.Main_picture != undefined"
         :height="$vuetify.breakpoint.smAndDown ? '' : '80vh'"
-        :src="$vuetify.breakpoint.smAndDown ? 'https://admin.macahernandez.co' + gallery.Main_picture.formats.large.url : 'https://admin.macahernandez.co' + gallery.Main_picture.url"
-        :lazy-src="'https://admin.macahernandez.co' + gallery.Main_picture.formats.thumbnail.url"
+        :src="$vuetify.breakpoint.smAndDown ? gallery.Main_picture.formats.large.url : gallery.Main_picture.url"
+        :lazy-src="gallery.Main_picture.formats.thumbnail.url"
         :alt="gallery.Main_picture.alternativeText"
       />
 
