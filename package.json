@@ -13,6 +13,7 @@
   "dependencies": {
     "@mdi/js": "^5.9.55",
     "@nuxt/core": "^2.15.3",
+    "@nuxtjs/google-analytics": "^2.4.0",
     "@nuxtjs/strapi": "^0.3.0",
     "@nuxtjs/vercel-builder": "^0.21.2",
     "@nuxtjs/vuetify": "^1.11.3",
