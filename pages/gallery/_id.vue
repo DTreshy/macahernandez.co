@@ -1,7 +1,7 @@
 <template>
   <v-row no-gutters class="black--text">
-    <OverlayPicture />
-    <BackButton />
+    <overlayPicture />
+    <backButton />
     <v-col>
       <v-img
         v-if="gallery.Main_picture != undefined"
@@ -59,7 +59,7 @@
           cols="6"
           class="d-flex"
         >
-          <Picture :picture="picture" />
+          <pic :picture="picture" />
         </v-col>
       </v-row>
     </v-col>
@@ -67,21 +67,21 @@
 </template>
 
 <script>
-  import Picture from '../../components/gallery/Picture'
-  import OverlayPicture from '../../components/gallery/OverlayPicture'
-  import BackButton from '../../components/gallery/BackButton'
-  export default {
-    components: { BackButton, OverlayPicture, Picture },
-    data () {
-      return {
-        gallery: {}
-      }
-    },
-    async mounted () {
-      this.gallery = await this.$strapi.$galleries.findOne(this.$route.params.id)
-      console.log(this.gallery.Text)
+import pic from '../../components/gallery/pic'
+import overlayPicture from '../../components/gallery/overlayPicture'
+import backButton from '../../components/gallery/backButton'
+export default {
+  components: { backButton, overlayPicture, pic },
+  data () {
+    return {
+      gallery: {}
     }
+  },
+  async mounted () {
+    this.gallery = await this.$strapi.$galleries.findOne(this.$route.params.id)
+    console.log(this.gallery.Text)
   }
+}
 </script>
 
 <style scoped>

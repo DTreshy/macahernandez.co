@@ -28,7 +28,6 @@
 
 <script>
 export default {
-  name: 'Picture',
   props: {
     picture: {
       required: true,

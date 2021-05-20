@@ -1,8 +1,8 @@
 <template>
   <v-row no-gutters>
     <v-col class="black--text text-h1 font-weight-bold">
-      <Welcome />
-      <Subtitle />
+      <welcome />
+      <subtitle />
       <v-row
         no-gutters
         class="py-12"
@@ -25,25 +25,25 @@
 </template>
 
 <script>
-  import Subtitle from '../components/index/Subtitle'
-  import GalleryTile from '../components/index/GalleryTile.vue'
-  import Welcome from '../components/index/Welcome.vue'
-  export default {
-    components: { GalleryTile, Welcome, Subtitle },
-    data () {
-      return {
-        galleries: [],
-        error: null
-      }
-    },
-    async mounted () {
-      try {
-        this.galleries = await this.$strapi.$galleries.find()
-      } catch (error) {
-        this.error = error
-      }
+import subtitle from '../components/index/subtitle'
+import galleryTile from '../components/index/galleryTile'
+import welcome from '../components/index/welcome'
+export default {
+  components: { galleryTile, welcome, subtitle },
+  data () {
+    return {
+      galleries: [],
+      error: null
+    }
+  },
+  async mounted () {
+    try {
+      this.galleries = await this.$strapi.$galleries.find()
+    } catch (error) {
+      this.error = error
     }
   }
+}
 </script>
 
 <style>

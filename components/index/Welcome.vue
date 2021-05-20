@@ -28,8 +28,8 @@
         class="d-flex"
         :class="$vuetify.breakpoint.smAndDown ? 'mt-4' : 'mt-16 pt-10 ml-16 mr-16 pr-16'"
       >
-        <Button text="Linkedin" destination="https://www.linkedin.com/in/mar%C3%ADa-camila-hern%C3%A1ndez-lastra-252635186/" class="mx-auto" />
-        <Button text="Instagram" destination="https://www.instagram.com/macahernandez14/" class="mx-auto" />
+        <but text="Linkedin" destination="https://www.linkedin.com/in/mar%C3%ADa-camila-hern%C3%A1ndez-lastra-252635186/" class="mx-auto" />
+        <but text="Instagram" destination="https://www.instagram.com/macahernandez14/" class="mx-auto" />
       </v-row>
     </v-col>
     <v-spacer v-show="$vuetify.breakpoint.smAndDown" />
@@ -46,10 +46,9 @@
 </template>
 
 <script>
-import Button from '~/components/Button'
+import but from '~/components/but'
 export default {
-  name: 'Welcome',
-  components: { Button }
+  components: { but }
 }
 </script>
 

@@ -16,25 +16,24 @@
 </template>
 
 <script>
-  export default {
-    name: 'Button',
-    props: {
-      text: {
-        required: true,
-        type: String
+export default {
+  props: {
+    text: {
+      required: true,
+      type: String
+    },
+    func: {
+      default () {
+        return 0
       },
-      func: {
-        default () {
-          return 0
-        },
-        type: Function
-      },
-      destination: {
-        default: '',
-        type: String
-      }
+      type: Function
+    },
+    destination: {
+      default: '',
+      type: String
     }
   }
+}
 </script>
 
 <style scoped>

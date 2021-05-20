@@ -26,17 +26,16 @@
 </template>
 
 <script>
-  export default {
-    name: 'OverlayPicture',
-    computed: {
-      overlay () {
-        return this.$store.getters.getOverlayState
-      },
-      overlayImage () {
-        return this.$store.getters.getOverlayImage
-      }
+export default {
+  computed: {
+    overlay () {
+      return this.$store.getters.getOverlayState
+    },
+    overlayImage () {
+      return this.$store.getters.getOverlayImage
     }
   }
+}
 </script>
 
 <style scoped>

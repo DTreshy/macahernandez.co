@@ -33,24 +33,23 @@
 </template>
 
 <script>
-  export default {
-    name: 'GalleryTile',
-    props: {
-      gallery: {
-        type: Object,
-        required: true
-      }
-    },
-    data () {
-      return {
-        published: ''
-      }
-    },
-    mounted () {
-      const date = this.gallery.published_at
-      this.published = date.slice(8, 10) + '.' + date.slice(5, 7) + '.' + date.slice(0, 4)
+export default {
+  props: {
+    gallery: {
+      type: Object,
+      required: true
     }
+  },
+  data () {
+    return {
+      published: ''
+    }
+  },
+  mounted () {
+    const date = this.gallery.published_at
+    this.published = date.slice(8, 10) + '.' + date.slice(5, 7) + '.' + date.slice(0, 4)
   }
+}
 </script>
 
 <style scoped>

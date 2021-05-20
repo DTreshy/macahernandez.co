@@ -21,9 +21,8 @@
 </template>
 
 <script>
-  export default {
-    name: 'BackButton'
-  }
+export default {
+}
 </script>
 
 <style scoped>
